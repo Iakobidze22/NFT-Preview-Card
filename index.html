@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NFT preview card component</title>
+    <link rel="icon" type="image/png" href="./icon123.png/" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap");
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .main-image{
+      margin-bottom: 24px;
+      position: relative;
+    }
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: #0d192c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    .box {
+      max-width: 350px;
+      border-radius: 15px;
+      padding: 20px;
+      background-color: #15263f;
+      -webkit-box-shadow: 0px 25px 50px;
+    }
+    .name {
+      display: inline;
+      font-size: 22px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .paragraph {
+      font-size: 18px;
+      line-height: 26px;
+      color: #8bacd9;
+      font-style: normal;
+      font-weight: 300;
+      margin-top: 16px;
+    }
+    .image {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      max-width: 100%;
+      border-radius: 10px;
+     }
+    .eth-text {
+      color: #00fff8;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 19px;
+    }
+    .timing {
+      color: #8bacd9;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+    }
+    .icons {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: #2e405a;
+    }
+    .icons div {
+      display: flex;
+      align-items: center;
+    }
+    .icons div span {
+      margin-left: 5px;
+    }
+    .creationof{
+      color: #8BACD9;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      margin-right:5px; 
+    }
+    .name1 {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .creation {
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+    }
+    .avatar{
+     width: 33px;
+     height: 33px;
+     margin-right:16px;
+    }
+    .name:hover{
+     color: #00fff8;
+    }
+   .name1:hover{
+     color:#00fff8;
+   }
+    .view-class {
+      height: 310px;
+      width: 310px;
+      background-color: #00fff791;
+      border-radius: 10px;
+      z-index: -1;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .main-image:hover{
+      opacity: 1; 
+      padding: 0;
+      cursor: pointer;
+    }
+    .main-image:hover .view-class{
+      z-index: 1;
+
+    }
+    .view-class{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div class="box">
+       
+        <div class="main-image">
+        <img src="./image-equilibrium.jpg" class="image"/>
+        <div class="view-class">
+            <img src="./icon-view.svg" class="image123"/>
+            </div>
+        </div>
+        <span class="name">
+          Equilibrium #3429
+        </span>
+        <p class="paragraph">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="icons">
+          <div>
+            <img src="./icon-ethereum.svg" />
+            <span class="eth-text"> 0.041 ETH</span>
+          </div>
+          <div class="timing">
+            <img class="clock-img" src="icon-clock.svg" />
+            <span class="timing">3 days left</span>
+          </div>
+        </div>
+      <div class="line" > 
+      </div>
+      <div class="creation">
+        <img src="./image-avatar.png" alt="icon2" class="avatar">
+        <h1 class="creationof">
+          Creation of
+          <h1 class="name1">
+            Jules Wyvern
+    </div>
+  </div>
+  </body>
+</html>
